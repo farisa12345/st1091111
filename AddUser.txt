@@ -1,11 +1,8 @@
-''*****************************************************************************
-
-'' ABC Automated Testing
 '' Copyright (c) 2024 ABC
 '' All Rights Reserved Worldwide
 '' Unauthorized Duplication or Distribution Prohibited
 '' *****************************************************************************
-'' FILENAME: adduser7
+'' FILENAME: adduser8
 '' *****************************************************************************
 '' ABOUT THIS FILE 
 
@@ -25,7 +22,14 @@
 
 
 ''SCRIPT
+''Test cases for Phase 1
 
-AddUser "user", "password123", "John", "Smith", "ABC", "(416)456-0000", "jsmith@sample.com", "Loan Officer"
-AddUser "nsmith", "password01", "Nancy", "Smith", "ABC", "(416)437-1234", "nsmith@sample.com", "Loan Officer"
+''Valid input
+AddUser "dsmith", "password", "Peter", "Smith", "ABC", "(416)456-0000", "jsmith@sample.com", "Loan Officer" 
+
+''Invalid input - missing username
+AddUser "", "password", "Ron", "Smith", "ABC", "(416)456-0200", "rsmith@sample.com", "Loan Officer" 
+
+''Invaid input - missing password
+AddUser "rnmith", "", "Ron", "Smith", "ABC", "(416)455-0200", "rsmith@sample.com", "Loan Officer"
 
