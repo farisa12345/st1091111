@@ -29,6 +29,8 @@ AddUser "dsmith", "password", "Peter", "Smith", "ABC", "(416)456-0000", "jsmith@
 
 ''Invalid input - missing username
 AddUser "", "password", "Ron", "Smith", "ABC", "(416)456-0200", "rsmith@sample.com", "Loan Officer" 
+''Invalid input - invalid email
+AddUser "jsmith", "password", "John", "Smith", "ABC", "416-456-0000", "jsmithsample.com"
 
 ''Invaid input - missing password
 AddUser "rnmith", "", "Ron", "Smith", "ABC", "(416)455-0200", "rsmith@sample.com", "Loan Officer"
